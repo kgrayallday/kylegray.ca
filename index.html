@@ -1,0 +1,176 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Personal Portfolio Page">
+    <meta name="keywords" content="HTML,Kyle,Gray,Resume,Portfolio,Page,Website">
+    <meta name="author" content="kyle gray">
+    <title>Kyle Gray</title>
+</head>
+
+
+<body>
+<!---- NAV BAR BEGINS  ---->
+    <header class="header-container">
+        <div class="logo">
+            <namelogo><a id="navname">Kyle Gray</a></namelogo>  
+        </div>
+
+        <div class="spacebetween">
+            
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#contact" class="links">Contact</a></li>
+                <li><a href="#projects" class="links">Projects</a></li>
+                <li><a href="#about" class="links">About</a></li>
+            </ul>
+        </nav>
+
+        <!-- NAV BAR BURGER MENU MAGIC -->
+        <div id="burger" class="veggieburger" onclick="myFunction(this); changeFunction();">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+
+    <div id="mobilemenu" class="dropmenu">
+        <a href="#contact" onclick="myFunction(document.getElementById('burger')); changeFunction();">Contact</a>
+        <a href="#projects" onclick="myFunction(document.getElementById('burger')); changeFunction();">Projects</a>
+        <a href="#about" onclick="myFunction(document.getElementById('burger')); changeFunction();">About</a>
+    </div>
+<!---- NAV BAR ENDS ---->
+
+<!---- MAIN PAGE BEGINS ---->
+    <div class="first-container">
+            <p id="big-greeting">Hey there! <br> My name is Kyle Gray</p>
+            <p id="little-greeting">Hi, I'm Kyle Gray!</p>
+        
+            <div class="pic-n-paragraph">
+                <p id="paragraph"> 
+                    I am a self-taught Technologist. 
+                    I dabble in many areas but my main focus right now is Java and 
+                    web developement. However I also enjoy graphic design and playing around with linux 
+                    server and desktop enviroments.
+                </p>
+
+                <img id="kylepic" src="./img/kylemain.jpg" alt="kylegrayportrait" title="me">
+            </div>
+        </div>
+
+    </div>
+    <div style="clear:both"></div>
+
+    <div class="spacediv"></div>
+    
+<!---- ABOUT SECTION BEGINS ---->    
+    <a name="about"></a>
+    <br>
+    <div>
+        <p class="headings" id="aboutme">About Me</p>
+        <p class="desc">
+            Homebase is currently <a class="hyperlinks" href="https://en.wikipedia.org/wiki/Vancouver">Vancouver</a> 🇨🇦<br> 
+            Ah Beautiful British Columbia, I love living in Vancouver as much for the nature and wilderness 
+            as for the (some-what) big city vibes. Vancouver is a fairly progressive city with tons of great 
+            culture and food, and as a <a class="hyperlinks" href="https://en.wikipedia.org/wiki/Veganism">
+            Vegan</a>🌱 I especially appreciate the plethora of plant-based resteraunts it has to offer. <br>
+            When I am not on my computer being a nerd I am outside either hiking, running, or camping!
+        </p>
+    </div>
+
+    <div id="pic2" class="jumbotron">
+    </div>
+
+<!---- ABOUT SECTION ENDS ---->
+
+<!----  PROJECTS SECTION BEGINS ---->
+    <a name="projects"></a>
+    <br>
+    <div>
+        <p class="headings">Projects</p><br>
+        <div class="spacediv"></div>
+        <div class="linedevide"></div>
+        <div class="spacediv"></div>
+        <br>
+            <a href="https://ivin.app" class="subheadings">IVIN</a>
+            <div class="spacediv"></div>
+                <!--<img class="billboard" src="img/ivinanimation.gif">-->
+                <video class="billboard" width="85%" autoplay="autoplay" muted loop>
+                    <source src="vid/ivinmp4.mp4" type="video/mp4">
+                    <source src="vid/ivinmpg.mpg" type="video/mpg">
+		            <source src="img/ivinanimation.gif" type="video/gif">
+                </video>
+                    <p class="desc">
+                        IVIN is a VIN Barcode scanning app designed for the logistics industry, specifically the automotive sector.
+                        <br>
+                        <br>
+                        IVIN works by scanning a vehicles unique identification number barcode which all modern vehicles have on their chassis. 
+                        By collecting and attaching data to specific VINs we are able to keep track of what work has been performed on which vehicles and which 
+                        services we need to invoice our customers for. Also in the case of long term storage it helps us to identify when each unit is due for periodic 
+                        servicing.
+                    </p>
+                    <p class="desc">To Download Sample Android App <a class="clickme" href="/ivin/ivindummy.apk">Click Here👈</a></p>
+        <div class="linedevide"></div>
+            <p id="bartender" class="subheadings">🍺<a href="https://graydev.ca/bartender">Bartender</a></p>
+            <img id="barcode" class="descObj" src="img/BartenderBarcode.png">
+                   <!--  <img src="https://via.placeholder.com/728x90.png?text=Placeholder+Image"> -->
+                    <p class="desc">
+                        <strong>Bartender</strong> is a simple barcode generator app created to generate "CODE 128" Barcodes. 
+                        It was designed for a client who needed an easy way to print barcode sheets 
+                        for inventory management control.
+                    </p>
+
+    
+                
+    </div>
+<!---- PROJECTS SECTION ENDS ---->
+
+
+<!---- BEGINNING OF FOOTER ---->
+    <a name="contact"></a>
+    <div class="footer">
+        <p>Designed, Created and Maintained by Kyle Gray</p>
+        <p>Based in Vancouver BC, Canada</p>
+        <p> </p>
+
+        <a href="https://twitter.com/kgrayallday247" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/kgrayallday/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/kyle-gray-23631093" class="fa fa-linkedin"></a>
+        <a href = "mailto: kylemaxgray@gmail.com" class="fa fa-envelope"></a> 
+
+    </div class="footer">
+<!---- END OF FOOTER ---->
+
+<!---- BEGINNING OF TICKER ---->
+    <script>
+    function myFunction(x) {
+    x.classList.toggle("change");
+    console.log(x);
+    }
+    function changeFunction(){
+        var change = document.getElementById("mobilemenu");
+        change.classList.toggle("change");
+    }
+
+    </script>
+  <div class="tcontainer">
+    
+    <div class="ticker-wrap">
+      <div class="ticker-move">
+        <div class="ticker-item">Special thanks to</div>
+        <div class="ticker-item">Noah Lanphear for my display picture 📷</div>
+        <div class="ticker-item">My brother Chad for being my dev partner 💁🏼‍♂️</div>
+        <div class="ticker-item">My Life Partner Martha for all her love, support, and patience ❤️</div>
+      </div>
+    </div>
+<!---- END OF TICKER ---->
+  </div>
+<!---- END OF PAGE ---->
+</body>
+</html>
