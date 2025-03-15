@@ -1,6 +1,10 @@
 @import './base.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+body {
+  background-color: var(--gruv-gb-dark);
+}
+
 #app {
   margin: 0 auto;
   padding: 1rem;
@@ -9,10 +13,13 @@
   max-width:992px;
 }
 
-a,
-.green {
+h1, h2, h3, h4, h5, p {
+  color: var(--gruv-fg-dark);
+}
+
+a {
   text-decoration: none;
-  color: green;
+  color: var(--color-text-primary);
   transition: 0.4s;
   padding: 3px;
 }
@@ -23,8 +30,5 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-  }
+@media (max-width: 997px) {
 }
