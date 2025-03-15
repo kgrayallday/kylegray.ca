@@ -16,20 +16,20 @@ defineProps({
     <div class="menu"></div>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink class='menu-link' to="/">Home</RouterLink>
+        <RouterLink class='menu-link' to="/about">About</RouterLink>
+        <RouterLink class='menu-link' to="/blog">Blog</RouterLink>
       </nav>
     </div>
   </div>
 </template>
 
 <style scoped>
-  h1 {
+  .logo-name h1 {
     font-size: 1.3em;
-    color: var(--gruv-green-dark);
+    color: var(--gruv-lightgreen-dark);
   }
-  a {
-    color: var(--gruv-green-dark);
+  .menu-link{
+    color: var(--gruv-lightgreen-dark);
   }
 </style>

@@ -1,11 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Nav from './components/Nav.vue'
+import NavBar from './components/NavBar.vue'
 </script>
 
 <template>
   <header>
-    <Nav logoName="Kyle Gray" />
+    <NavBar logoName="Kyle Gray" />
   </header>
 
   <RouterView />
