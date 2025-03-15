@@ -8,9 +8,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="container">
+  <div class="d-flex align-items-center justify-content-between">
     <div class="logo-name">
-      <h1 class="green">{{ logoName }}</h1>
+      <h1>{{ logoName }}</h1>
     </div>
     <div class="spacer"></div>
     <div class="menu"></div>
@@ -25,20 +25,11 @@ defineProps({
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid gray;
-}
-
+  h1 {
+    font-size: 1.3em;
+    color: var(--gruv-green-dark);
+  }
+  a {
+    color: var(--gruv-green-dark);
+  }
 </style>
