@@ -9,8 +9,8 @@ defineProps({
 
 <template>
   <div class="d-flex align-items-center justify-content-between">
-    <div class="logo-name">
-      <h1>{{ logoName }}</h1>
+    <div>
+      <a>{{ logoName }}</a>
     </div>
     <div class="spacer"></div>
     <div class="menu"></div>
@@ -22,14 +22,17 @@ defineProps({
       </nav>
     </div>
   </div>
+  <a @click="$router.go(-1)" class="text-primary">🠬</a>
 </template>
 
 <style scoped>
+  .menu {
+    display: none;
+  }
   .logo-name h1 {
-    font-size: 1.3em;
-    color: var(--gruv-lightgreen-dark);
+    color: var(--kg-fg);
   }
   .menu-link{
-    color: var(--gruv-lightgreen-dark);
+    color: var(--kg-fg);
   }
 </style>

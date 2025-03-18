@@ -17,8 +17,9 @@ header {
   position: sticky;
   top:0;
 }
+
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--kg-fg);
 }
 
 nav a.router-link-exact-active:hover {
