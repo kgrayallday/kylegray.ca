@@ -11,7 +11,7 @@
 
       <div class="contact-card">
         <h2>Area 1</h2>
-        <p>item 1</p>
+        <RouterLink to="/ivin">IVIN</RouterLink>
         <p>item 2</p>
       </div>
 
@@ -30,29 +30,5 @@ img {
   border-radius: 50%;
   width: 64px;
   height: 64px;
-}
-p, h2 {
-  color: var(--color-text-primary);
-}
-h3 {
-  color: var(--color-text-secondary);
-}
-.text-red {
-  color: var(--gruv-red-dark);
-}
-.text-comment {
-  color: var(--color-text-secondary);
-}
-.var {
-  color: var(--gruv-red-dark);
-}
-.op {
-  color: var(--gruv-blue-dark);
-}
-.brace {
-  color: var(--gruv-blue-dark);
-}
-.string {
-  color: var(--gruv-green-dark)
 }
 </style>
