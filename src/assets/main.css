@@ -1,25 +1,83 @@
 @import './base.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+/* some sane defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
 body {
-  background-color: var(--gruv-gb-dark);
+  min-height: 100vh;
+  background-image: linear-gradient(to right, var(--kg-bg) 60%, var(--kg-bg-2));
+  color: var(--kg-fg);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    "Varela Round",
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul, ol {
+  list-style: none;
+}
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+button, a {
+  user-select: none;
 }
 
 #app {
   margin: 0 auto;
   padding: 1rem;
   font-weight: normal;
-  min-width:100%;
   max-width:992px;
 }
 
 h1, h2, h3, h4, h5, p {
-  color: var(--gruv-fg-dark);
+  color: var(--kg-fg);
+}
+.text-red {
+  color: var(--kg-red);
+}
+.text-comment {
+  color: var(--kg-comment);
+}
+.text-mute {
+  color: var(--kg-comment);
+}
+.var {
+  color: var(--kg-red);
+}
+.op {
+  color: var(--kg-teal);
+}
+.brace {
+  color: var(--kg-teal);
+}
+.string {
+  color: var(--kg-green);
 }
 
 a {
   text-decoration: none;
-  color: var(--color-text-primary);
+  color: var(--kg-fg);
   transition: 0.4s;
   padding: 3px;
 }
