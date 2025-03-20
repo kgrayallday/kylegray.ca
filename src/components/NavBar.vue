@@ -22,7 +22,7 @@ defineProps({
       </nav>
     </div>
   </div>
-  <a @click="$router.go(-1)" class="text-primary">🠬</a>
+  <a @click="$router.go(-1)" class="text-primary"><<</a>
 </template>
 
 <style scoped>
