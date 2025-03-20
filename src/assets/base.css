@@ -17,6 +17,7 @@
   --kg-bg: var(--kg-col-bg-dark);
   --kg-bg-2: var(--kg-col-bg-acc-dark);
   --kg-fg: var(--kg-col-fg-dark);
+  --kg-red: var(--kg-col-red);
 }
 
 /* Light Theme */
