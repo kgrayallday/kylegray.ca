@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
+import PageFooter from './components/PageFooter.vue'
 </script>
 
 <template>
@@ -9,6 +10,9 @@ import NavBar from './components/NavBar.vue'
   </header>
 
   <RouterView />
+  <footer>
+    <PageFooter />
+  </footer>
 </template>
 
 <style scoped>
@@ -32,6 +36,12 @@ nav a {
 nav a:first-of-type {
 }
 
+footer {
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  height: 200px;
+}
 /* Large Screens */
 @media (min-width: 1024px) {
 }
