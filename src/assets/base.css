@@ -7,9 +7,12 @@
   --kg-col-green: #62AB37;
   --kg-col-teal: #39A2AE;
   --kg-col-red: #720E07;
+  --kg-col-violet: #702CF9;
 
   --kg-col-fg-light: #0D1117;
   --kg-col-bg-light: #E8E8E8;
+
+  --kg-dim-width: 992px;
 }
 
 :root {
