@@ -45,9 +45,10 @@ button, a {
 
 #app {
   margin: 0 auto;
-  padding: 1rem;
   font-weight: normal;
-  max-width:992px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 h1, h2, h3, h4, h5, p {
