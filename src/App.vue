@@ -8,39 +8,31 @@ import PageFooter from './components/PageFooter.vue'
   <header>
     <NavBar logoName="Kyle Gray" />
   </header>
-
+  <main>
   <RouterView />
+  </main>
   <footer>
     <PageFooter />
   </footer>
 </template>
 
 <style scoped>
-
 header {
   position: sticky;
   top:0;
+  width: 100%;
+  background: var(--kg-col-violet);
+  padding: .75rem 0;
 }
-
-nav a.router-link-exact-active {
-  color: var(--kg-fg);
+main {
+  height: 100%;
+  max-width: var(--kg-dim-width);
+  margin: auto;
 }
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-}
-
-nav a:first-of-type {
-}
-
 footer {
-  position: absolute;
-  bottom:0px;
   width: 100%;
   height: 200px;
+  background-color: var(--kg-col-bg-acc-dark);
 }
 /* Large Screens */
 @media (min-width: 1024px) {
